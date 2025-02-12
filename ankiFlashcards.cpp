@@ -23,13 +23,7 @@ struct Colecao {
 vector<Colecao> colecoes;
 
 // Funções
-void limparTela() {  
-#ifdef _WIN32  
-    system("cls");  
-#else  
-    system("clear");  
-#endif  
-}
+
 void menuPrincipal();
 void adicionarColecao();
 void gerenciarColecoes();
@@ -52,7 +46,6 @@ int main() {
 void menuPrincipal() {
     int opcao;
     do {
-      limparTela();
         cout << "\n--- Sistema de Flashcards ---\n";
         cout << "1. Adicionar Colecao\n";
         cout << "2. Gerenciar Colecoes\n";
@@ -96,7 +89,6 @@ void gerenciarColecoes() {
     }
     int opcao;
     do {
-      limparTela();
         cout << "\n--- Gerenciamento de Colecoes ---\n";
         cout << "1. Visualizar Colecoes\n";
         cout << "2. Excluir Colecao\n";
